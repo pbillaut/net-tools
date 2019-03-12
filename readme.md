@@ -1,6 +1,6 @@
 # Networking Tools
 
-[![DockerHub](https://img.shields.io/badge/DockerHub-https%3A%2F%2Fhub.docker.com%2Fr%2Fpbillaut%2Fnet--tools-blue.svg?style=flat&logo=docker&logoColor=white)](https://hub.docker.com/r/pbillaut/net-tools)
+[![DockerHub](https://img.shields.io/badge/DockerHub-pbillaut%2Fnet--tools-blue.svg?style=flat&logo=docker&logoColor=white)](https://hub.docker.com/r/pbillaut/net-tools)
 
 Docker image based on Alpine Linux, containing common tools for network
 analysis and debugging, like
@@ -9,8 +9,6 @@ analysis and debugging, like
 * `drill`
 * `nc`
 * `nmap`
-
-See https://hub.docker.com/r/pbillaut/net-tools
 
 ## cURL Stats
 
