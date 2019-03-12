@@ -1,0 +1,50 @@
+# ==============================================================================\n
+# Request\n
+# ==============================================================================\n
+Effective URL: %{url_effective}\n
+Redirect URL:  %{redirect_url}\n
+HTTP Version:  %{http_version}\n
+Content-Type:  %{content_type}\n
+Scheme:        %{scheme}\n
+Status Code:   %{http_code}\n
+\n
+# ==============================================================================\n
+# Connection\n
+# ==============================================================================\n
+Source\n
+  IP:   %{local_ip}\n
+  Port: %{local_port}\n
+Destination\n
+  IP:   %{remote_ip}\n
+  Port: %{remote_port}\n
+\n
+Connections:   %{num_connects}\n
+Redirects:     %{num_redirects}\n
+SSL Verification\n
+  Destination: %{ssl_verify_result}\n
+  Proxy:       %{proxy_ssl_verify_result}\n
+\n
+# ==============================================================================\n
+# Payload / Speed\n
+# ==============================================================================\n
+DL Size:      %{size_download} B\n
+UL Size:      %{size_upload} B\n
+Header Size:  %{size_header} B\n
+Request Size: %{size_request} B\n
+\n
+DL Speed:     %{speed_download} B/s\n
+UL Speed:     %{speed_upload} B/s\n
+
+\n
+# ==============================================================================\n
+# Timing\n
+# ==============================================================================\n
+App Connect:    %{time_appconnect}\n
+Connection:     %{time_connect}\n
+Pre Transfer:   %{time_pretransfer}\n
+Redirection:    %{time_redirect}\n
+Start Transfer: %{time_starttransfer}\n
+DNS:            %{time_namelookup}\n
+------------------------\n
+Total:          %{time_total}\n
+\n

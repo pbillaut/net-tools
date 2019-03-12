@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+curl --silent -o /dev/null -w @/usr/local/share/curl/stats.format $@

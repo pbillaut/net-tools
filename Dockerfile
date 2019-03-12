@@ -1,5 +1,7 @@
 FROM alpine:3.9
 
+WORKDIR /root
+
 RUN apk --no-cache update \
   && apk --no-cache add \
     bash \
@@ -16,6 +18,9 @@ RUN apk --no-cache update \
     nmap \
     openssh-client \
     tcpdump \
-  && rm -rf /var/cache/apk/*
-WORKDIR /root
-COPY bashrc /root/.bashrc
+  && rm -rf /var/cache/apk/* \
+  && mkdir -p /usr/local/share/curl
+
+COPY files/bashrc /root/.bashrc
+COPY bin/* /usr/local/bin/
+COPY files/curl-stats.format /usr/local/share/curl/stats.format
